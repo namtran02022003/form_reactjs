@@ -2,7 +2,7 @@
     border-radius: 5px;
     max-width: 450px;
     padding: 0 20px;
-    /* margin: auto; */
+    margin: auto;
     background-color: white;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
   }
@@ -23,7 +23,7 @@
     min-height: 100px;
     max-height: 100px;
   }
-  .form-group input:focus-within, textarea:focus-within{
+  .form-group input:focus-within, textarea:focus-within,select:focus-within{
     outline: 1px solid #b5b4b9;
   }
   #sign-up-form{
@@ -31,4 +31,7 @@
   }
   *{
     box-sizing: border-box;
+  }
+  .errMessage{
+    color: red;
   }
