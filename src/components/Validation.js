@@ -4,7 +4,7 @@ const validate = (values,errs,setMessageErr) => {
     } else if (values.UserName.trim().length < 6) {
       errs.UserName = "Vui lòng nhập ít nhất 6 ký tự!"
     } else if (values.UserName.trim().length > 20) {
-      errs.UserName = "Vui lòng nhập tối đa 20 ký tự!"
+      errs.UserName = "Vui lòng chỉ nhập tối đa 20 ký tự!"
     }
     if (!values.Email.trim()) {
       errs.Email = 'Vui lòng nhập vào trường này!'
@@ -16,7 +16,7 @@ const validate = (values,errs,setMessageErr) => {
     } else if (values.Password.trim().length < 8) {
       errs.Password = 'Vui lòng nhập ít nhất 8 ký tự!'
     } else if (values.Password.trim().length > 20) {
-      errs.Password = 'Vui lòng nhập tối đa 20 ký tự!'
+      errs.Password = 'Vui lòng chỉ nhập tối đa 20 ký tự!'
     }
     if (!values.Date) {
       errs.Date = 'Vui lòng nhập vào trường này!'

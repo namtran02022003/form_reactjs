@@ -80,9 +80,9 @@ function App() {
     <>
       <div className='container'>
         <form id="sign-up-form" onSubmit={handleSubmit}>
-          <h2 className='text-center'>Sign Up</h2>
+          <h2 className='text-center'>Sign Up<hr/></h2>
           <FormInput value={values.UserName} onChange={(e) => handleChangeValue(e, 'UserName')} name="username" labelName="Username" type="text" placeholder="Enter username" messageErr={messageErr.UserName} />
-          <FormInput value={values.Email} onChange={(e) => handleChangeValue(e, 'Email')} name="email" labelName="Email" type="email" placeholder="Enter email" messageErr={messageErr.Email} />
+          <FormInput value={values.Email} onChange={(e) => handleChangeValue(e, 'Email')} name="email" labelName="Email" type="email." placeholder="Enter email" messageErr={messageErr.Email} />
           <FormInput value={values.Password} onChange={(e) => handleChangeValue(e, 'Password')} name="password" labelName="Password" type="password" placeholder="Enter password" messageErr={messageErr.Password} />
           <p>Gender:</p>
           <div className='sign-up-form-radio'>
@@ -116,7 +116,7 @@ function App() {
           </div>
         </form>
       </div>
-      <ListUsers listUser={listUser} handleEdit={handleEdit} removeUser={removeUser} />
+      {listUser && <ListUsers listUser={listUser} handleEdit={handleEdit} removeUser={removeUser} />}
     </>
   )
 }

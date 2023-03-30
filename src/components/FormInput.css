@@ -1,14 +1,10 @@
 .container {
     border-radius: 5px;
-    max-width: 450px;
+    max-width: 485px;
     padding: 0 20px;
     margin: auto;
     background-color: white;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
-  }
-  .form-group label{
-    display: block;
-    margin: 10px 0;
   }
   .form-group input, .form-sign-up-textarea, select{
     width: 100%;
@@ -32,6 +28,19 @@
   *{
     box-sizing: border-box;
   }
-  .errMessage{
+  .errMessage, label span{
     color: red;
+  }
+  .errMessage{
+    position: absolute;
+    top:101%;
+    left: 0;
+    font-size: 0.9rem;
+  }
+  label{
+    margin-top: 20px;
+    display: block;
+  }
+  .form-group{
+    position: relative;
   }
